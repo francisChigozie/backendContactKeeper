@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://chinosike:chinosike@cluster0.0jhix.mongodb.net/contactKeeper?retryWrites=true&w=majority"  
+  "mongoURI": "mongodb+srv://chinosike:chinosike@cluster0.0jhix.mongodb.net/contactKeeper?retryWrites=true&w=majority",
+  "jwtSecret": "secret"  
 }
