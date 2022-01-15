@@ -1,18 +1,18 @@
 const express = require('express');
-//const connectDB = require('./config/db');
+const connectDB = require('./config/db');
 const cors = require('cors')
 //const path = require('path')
 
 const app = express();
 
 // Connect to Data Base
-//connectDB();
+connectDB();
 
 // Cross Access Control Enabled
 app.use(cors({origin: "http://localhost:5000"})) 
 
 // Init Middleware
-//app.use(express.json({ extended: false }));
+app.use(express.json({ extended: false }));
 
 app.get('/', (req, res) => res.json({msg: 'Welcome to contact keeper API'}));
 
