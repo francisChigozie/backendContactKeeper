@@ -9,7 +9,7 @@ const app = express();
 connectDB();
 
 // Cross Access Control Enabled
-app.use(cors({origin: "http://localhost:5000"})) 
+app.use(cors({origin: "https://clientcontactkeeper.netlify.app"})) 
 
 // Init Middleware
 app.use(express.json({ extended: false }));
