@@ -9,7 +9,7 @@ const app = express();
 connectDB();
 
 // Cross Access Control Enabled
-app.use(cors({origin: "https://clientcontactkeeper.netlify.app"})) 
+app.use(cors({origin: " https://contactclientkeeper.netlify.app"})) 
 
 // Init Middleware
 app.use(express.json({ extended: false }));
@@ -36,5 +36,5 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
 
 /**
- * https://clientcontactkeeper.netlify.app
+ *  https://contactclientkeeper.netlify.app
  */
