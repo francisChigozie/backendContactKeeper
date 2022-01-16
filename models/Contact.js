@@ -1,8 +1,8 @@
-const mondoose = require('mongoose')
+const mongoose = require('mongoose')
 
-const ContactSchema = mondoose.Schema({
+const ContactSchema = mongoose.Schema({
     user: {
-        type: mondoose.Schema.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: 'users'
     },
     name: {
@@ -27,4 +27,4 @@ const ContactSchema = mondoose.Schema({
     }
 });
 
-module.exports = mondoose.model('contact', ContactSchema)
+module.exports = mongoose.model('contact', ContactSchema)
